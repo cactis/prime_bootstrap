@@ -1,7 +1,7 @@
-class PostsTableSection < Prime::TableSection
+class PostsIndexTableSection < Prime::TableSection
   def table_data
     Post.all.map do |model|
-      PostsCellSection.new(model: model)
+      PostsIndexCellSection.new(model: model)
     end
   end
 

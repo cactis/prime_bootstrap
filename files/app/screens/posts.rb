@@ -7,7 +7,7 @@ class PostsScreen < ApplicationScreen
     set_navigation_right_button 'New' do
       open_screen "posts#new"
     end
-    set_section :posts_table
+    set_section :posts_index_table
   end
 
   # open_screen "posts#show"
@@ -38,8 +38,8 @@ class PostsScreen < ApplicationScreen
   end
 
   def on_return
-    if action?(:index)
-      main_section.reload_data
+    if action?(:index) || action?(:show)
+      refresh
     end
   end
 end
