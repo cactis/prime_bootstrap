@@ -5,6 +5,10 @@ class SidebarScreen < Prime::Screen
     app_delegate.open_screen :home
   end
 
+  def open_posts
+    app_delegate.open_screen 'posts#index'
+  end
+
   def open_basic_form
     app_delegate.open_screen :basic_form
   end
