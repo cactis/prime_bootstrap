@@ -1,0 +1,14 @@
+.repl_history
+build
+tags
+nbproject
+.redcar
+#*#
+*~
+*.sw[po]
+.eprj
+.idea
+.DS_Store
+files/vendor/
+files/.repl_history
+files/Gemfile.lock
